@@ -1,0 +1,7 @@
+{
+  "name": "صبا آوا - تبدیل متن به گفتار",
+  "description": "صبا آوا - ابزار تبدیل متن به گفتار توسط گروه فنی صبارسانه",
+  "requestFramePermissions": [
+    "clipboard-read"
+  ]
+}

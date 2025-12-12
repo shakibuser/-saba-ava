@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>صبا آوا | تبدیل متن به گفتار</title>
+    
+    <!-- PWA / Mobile Theme Colors -->
+    <meta name="theme-color" content="#FCD305">
+    <meta name="msapplication-navbutton-color" content="#FCD305">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="صبا آوا">
+    <meta name="apple-mobile-web-app-title" content="صبا آوا">
+
+    <!-- App Icons (Embedded SVG for instant loading without external files) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjI1NiIgZmlsbD0iI2ZY2QzMDUiLz48Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2UzMjIzIiBzdHJva2Utd2lkdGg9IjE1Ii8+PHRleHQgeD0iNTAlIiB5PSI0MyUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMzZTMyMjMiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiI+2LXYqNinPC90ZXh0Pjx0ZXh0IHg9IjUwJSIgeT0iNzMlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM2UzMjIzIiBmb250LXNpemU9IjEwMCIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiPti02LPYp9mG2Yc8L3RleHQ+PHBhdGggaWQ9ImN1cnZlIiBkPSJNIDEyMCw0MTAgQSAyMDAsMjAwIDAgMCAwIDM5Miw0MTAiIGZpbGw9Im5vbmUiLz48dGV4dCBmb250LXNpemU9IjM4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzNlMzIyMyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSI+PHRleHRQYXRoIGhyZWY9IiNjdXJ2ZSIgc3RhcnRPZmZzZXQ9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QHNhYmFfcmFzYW5laGg8L3RleHRQYXRoPjwvdGV4dD48L3N2Zz4=" />
+    
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjI1NiIgZmlsbD0iI2ZY2QzMDUiLz48Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2UzMjIzIiBzdHJva2Utd2lkdGg9IjE1Ii8+PHRleHQgeD0iNTAlIiB5PSI0MyUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMzZTMyMjMiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiI+2LXYqNinPC90ZXh0Pjx0ZXh0IHg9IjUwJSIgeT0iNzMlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM2UzMjIzIiBmb250LXNpemU9IjEwMCIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiPti02LPYp9mG2Yc8L3RleHQ+PHBhdGggaWQ9ImN1cnZlIiBkPSJNIDEyMCw0MTAgQSAyMDAsMjAwIDAgMCAwIDM5Miw0MTAiIGZpbGw9Im5vbmUiLz48dGV4dCBmb250LXNpemU9IjM4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzNlMzIyMyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSI+PHRleHRQYXRoIGhyZWY9IiNjdXJ2ZSIgc3RhcnRPZmZzZXQ9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QHNhYmFfcmFzYW5laGg8L3RleHRQYXRoPjwvdGV4dD48L3N2Zz4=" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        font-family: 'Vazirmatn', sans-serif;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #1f2937;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1; 
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #4b5563;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
