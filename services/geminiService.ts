@@ -8,11 +8,14 @@ export const generateSpeech = async (
   settings: VoiceSettings
 ): Promise<string> => {
   
-  if (!process.env.API_KEY) {
-    throw new Error("کلید API یافت نشد. لطفا تنظیمات برنامه را بررسی کنید.");
+  // Use Vite's standard way to access environment variables
+  const API_KEY = import.meta.env.VITE_API_KEY;
+
+  if (!API_KEY) {
+    throw new Error("کلید API یافت نشد. لطفا در تنظیمات Vercel نام متغیر را به VITE_API_KEY تغییر دهید.");
   }
 
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: API_KEY });
 
   // ---------------------------------------------------------
   // Step 1: Translation (using Text Model)
